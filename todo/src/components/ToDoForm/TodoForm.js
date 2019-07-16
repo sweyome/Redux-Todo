@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Todo from "../Todo";
 import Redux from 'react';
 import {connect} from 'react-redux';
 import { addText } from '../../actions'
@@ -27,9 +26,9 @@ class TodoForm extends React.Component {
     render(){
     return (
         <div>
-            <input placeholder="enter todo" value={this.state.inputValue} onChange={this.inputHandler}/>
+            <input className ="form-control-range" placeholder="enter todo" value={this.state.inputValue} onChange={this.inputHandler}/>
             <button onClick={this.addHandler}>Add Todo</button>
-            <button>Clear Todo</button>
+            <button className ="btn-outline-success" >Clear Todo</button>
         </div>
     )
 }

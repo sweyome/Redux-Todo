@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import logo from './logo.svg';
 import './App.css';
 import Redux from 'react';
 import reducers from './reducers/reducers';
-import Headline from './components/test';
+// import Headline from './components/test';
 import {connect} from 'react-redux';
 import TodoForm from './components/ToDoForm/TodoForm';
 import TodoList from './components/TodoList/TodoList';
@@ -15,6 +16,18 @@ class App extends Component {
       input: '',
       }
     }
+
+    // inputHandler = (e) => {
+    //   this.setState({
+    //     [e.target.input]: e.target.value,
+    //   })
+    // }
+
+    // addHandler = (e) => {
+    //   e.preventDefault();
+    //   this.props.addText(this.state.input);
+    // }
+
   render() {
     return (
       <div className="App">
