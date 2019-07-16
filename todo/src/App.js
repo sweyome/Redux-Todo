@@ -33,6 +33,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
+        <br />
         <TodoForm />
         <TodoList />
       </div>
